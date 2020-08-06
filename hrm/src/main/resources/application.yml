@@ -1,3 +1,5 @@
+server:
+  port: 61000
 #mysql数据库配置
 spring:
   datasource:
@@ -6,5 +8,9 @@ spring:
     username: root
     password: 123456
     type: com.alibaba.druid.pool.DruidDataSource
-server:
-  port: 61000
+
+mybatis-plus:
+  global-config:
+    db-config:
+      id-type: id_worker
+

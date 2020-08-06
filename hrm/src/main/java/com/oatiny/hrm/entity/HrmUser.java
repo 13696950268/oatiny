@@ -1,5 +1,8 @@
 package com.oatiny.hrm.entity;
 
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableId;
+import io.swagger.annotations.ApiModel;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.ToString;
@@ -10,6 +13,7 @@ import java.time.LocalTime;
 @Data
 @ToString
 @AllArgsConstructor
+@ApiModel("用户基本信息")
 public class HrmUser {
     private String id;
     private String loginId;
