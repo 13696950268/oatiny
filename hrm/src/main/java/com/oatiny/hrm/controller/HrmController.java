@@ -7,6 +7,7 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -49,7 +50,12 @@ public class HrmController {
         return hrmUserMapper.selectList(null);
     }
 
-    public void addHrmUser(){
-
+    @RequestMapping(value = "/addHrmUser",method = RequestMethod.POST)
+    public void addHrmUser(@RequestBody HrmUser hrmUser){
+        try {
+            hrmUserMapper.insert(hrmUser);
+        } catch (Exception e) {
+            log.error("addHrmUser保存失败==="+e.getMessage());
+        }
     }
 }
