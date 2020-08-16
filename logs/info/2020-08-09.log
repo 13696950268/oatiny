@@ -1,0 +1,20 @@
+2020-08-09 11:52:22.942 [main] INFO  com.oatiny.hrm.HrmApplication - Starting HrmApplication on MS-TKTAICXYYWLT with PID 7220 (F:\shopAdmin\oatiny\hrm\target\classes started by Administrator in F:\shopAdmin\oatiny)
+2020-08-09 11:52:22.945 [main] INFO  com.oatiny.hrm.HrmApplication - No active profile set, falling back to default profiles: default
+2020-08-09 11:52:24.689 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 61000 (http)
+2020-08-09 11:52:24.701 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-61000"]
+2020-08-09 11:52:24.702 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-08-09 11:52:24.702 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-09 11:52:24.843 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-08-09 11:52:24.843 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1828 ms
+2020-08-09 11:52:26.245 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-09 11:52:26.440 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-61000"]
+2020-08-09 11:52:26.473 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 61000 (http) with context path ''
+2020-08-09 11:52:26.766 [main] INFO  com.oatiny.hrm.HrmApplication - Started HrmApplication in 4.529 seconds (JVM running for 8.894)
+2020-08-09 11:55:20.164 [http-nio-61000-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-09 11:55:20.165 [http-nio-61000-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-08-09 11:55:20.173 [http-nio-61000-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2020-08-09 11:55:20.272 [http-nio-61000-exec-1] INFO  com.oatiny.hrm.controller.HrmController - beginOfDay==2017-03-01 00:00:00
+2020-08-09 11:55:20.272 [http-nio-61000-exec-1] INFO  com.oatiny.hrm.controller.HrmController - endOfDay==2017-03-01 23:59:59
+2020-08-09 11:55:20.371 [http-nio-61000-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-08-09 18:49:42.365 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-09 18:49:42.428 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
